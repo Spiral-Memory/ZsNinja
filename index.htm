@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>ZsNinja</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logonmenu">
+                <img src="logoimg.png" alt="Gamers" class="logo">
+                <ul class="main-nav">
+                    <li><a href="#intro-text-box">Home</a></li>
+                    <!-- <li><a href="#">About Us</a></li> -->
+                    <li><a href="#trendingGames">Games</a></li>
+                    <li><a href="#ourGallery">Gallery</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="intro-text-box">
+            <h1>Welcome to Zs_Ninja..<br> <span class="onlineGamingText">Online Gaming Site </span> </h1>
+
+            <a href="#trendingGames" class="btn btn-play">I Wanna Play</a>
+            <a href="#ourGallery" class="btn btn-gallery">Our Gallery</a>
+
+
+        </div>
+    </header>
+
+
+    <section class="section-content">
+        <div id="trendingGames" class="trendingGames">
+            <h2>Trending Games:</h2>
+
+            <ul class="gameName">
+                <li><button class="showModal tic"><img src="ticcr.jpg" alt="Tic Tac Toe"
+                            class="images"></button>
+                    <span class="name showModal tic">Tic Tac Toe</span>
+                </li>
+
+
+
+
+                <li> <button class="showModal guess"> <img src="guesscr2.jpg" alt="Guess the Number"
+                            class="images"></button>
+                    <span class="name showModal guess">Guess My Number</span>
+                </li>
+
+
+
+                <li> <button class="showModal  dice"><img src="dicecr.png" alt="Roll Dice"
+                            class="images"></button>
+                    <span class="name showModal dice ">Roll the Dice </span>
+                </li>
+            </ul>
+
+            <div class="modal hidden">
+                <button class="close-modal">&times;</button>
+                <h1 id=namePreview>
+                    <!-- Dynamically Added -->
+                </h1>
+                <p id="instruction">
+                    <!-- Dynamically Added -->
+                </p>
+                <a href="#" class="btn btn-play playgame" id="play">Yes I Want To Play It</a>
+            </div>
+        </div>
+
+        <div class="ourGallery" id="ourGallery">
+            <h2>ScreenShot Gallery:</h2>
+            <div class="ss">
+
+
+
+
+
+                <img src="ticss.PNG" alt="Tic Tac SS" class="imageSS">
+                <img src="f1SS.JPG" alt="F1" class="imageSS small">
+                <img src="marioSS.JPG" alt="F1" class="imageSS small mario">
+                <img src="guessSS.PNG" alt="Guess My Number" class="imageSS">
+                <img src="pigSS.PNG" alt="Pig Roll the Dice" class="imageSS">
+
+            </div>
+
+        </div>
+        <div class="contactUs" id="contactUs">
+            <div class="row">
+                <h2>Contact us</h2>
+            </div>
+            <div class="row">
+                <h4 style="text-align:center">We'd love to hear from you!</h4>
+            </div>
+            <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input id = "name" type="text" required />
+                        <label>Name</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input">
+                        <input id = "email" type="text" required />
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input" style="float:right;">
+                        <input id = "number" type="text" required />
+                        <label>Phone Number</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea id = "Message" required></textarea>
+                        <label>Message</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <a href="#contactUs" class="btn btn-play submit" onclick="sendMessage()">Send Message</a>
+                </div>
+            </div>
+        </div>
+       
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
