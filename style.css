@@ -232,15 +232,17 @@ h2{
     position: absolute;
     top: 17%;
     left: 10%;
-    /* transform: translate(-50%, -70%); */
     width: 80%;
     height: 85%;
-   
     background-color: rgb(191, 180, 240);
     padding: 5rem;
     border-radius: 5px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
+  }
+
+  #instruction{
+    font-size: 16px;
   }
   
 
